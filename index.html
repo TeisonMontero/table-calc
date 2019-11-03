@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tabla De Multiplicar</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="index.html">MULTIPLICAR</a>
+      <a href="calculator.html">CALCULADORA</a>
+    </nav>
+  </header>
+
+  <h1 class="title">TABLA DE MULTIPLICAR</h1>
+
+  <main class="tabla">
+    <div class="datos">
+      <form id="myForm">
+        <h2>DATOS</h2>
+
+        <label for="n-tabla">Numero Multiplicando</label>
+        <input type="number" id="n-tabla"  placeholder="1" name="datos">
+
+        <label for="n-multiplicar">Limite Multiplicador</label>
+        <input type="number" id="l-multiplicar"  value="12" name="datos">
+
+        <button type="reset" id="btn-limpiar">LIMPIAR</button>
+      </form>
+    </div>
+
+    <div class="tabla-history">
+      <div class="botones-tabla">
+        <input type="submit" class="bt btn-imprimir" id="imprimir" value="IMPRIMIR" name="datos">
+        <button class="bt btn-eliminar" id="eliminar">ELIMINAR</button>
+      </div>
+      <div class="tbl">
+        <div class="result" id="eliminar">
+          
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/table.js"></script>
+  <script src="js/animation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+.site-header{
+  background-color: $blueLight;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  nav{
+    a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 40px;
+      margin-right: 20px;
+      transition: 0.4s;
+
+      &:last-of-type{
+        margin: 0;
+      }
+      &:hover{
+        color: $red;
+      }
+      &:active{
+        color: #fff;
+      }
+
+    }
+  }
+}
+
+// .background{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: rgba(255, 255, 255, 0.664);
+//   height: 88vh;
+// }

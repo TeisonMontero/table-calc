@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tabla De Multiplicar</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+  rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav>
+      <a href="index.html">MULTIPLICAR</a>
+      <a href="calculator.html">CALCULADORA</a>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <div class="calculator">
+      <!-- <div class="historial">
+        <label id="historial"></label>
+      </div> -->
+      <div class="display">
+        <form id="input">
+          <input type="text" id="display" class="c-display" value="0">
+        </form>
+      </div>
+      <div class="botones">
+        <div class="c-botones" id="botones">
+          <button class="btn red" id="clean">C</button>
+          <button class="btn">+ / -</button>
+          <button class="btn" id="porciento">%</button>
+          <button class="btn" id="division">/</button>
+          <button class="btn" id="n-7">7</button>
+          <button class="btn" id="n-8">8</button>
+          <button class="btn" id="n-9">9</button>
+          <button class="btn" id="multiplicar">X</button>
+          <button class="btn" id="n-4">4</button>
+          <button class="btn" id="n-5">5</button>
+          <button class="btn" id="n-6">6</button>
+          <button class="btn" id="restar">-</button>
+          <button class="btn" id="n-1">1</button>
+          <button class="btn" id="n-2">2</button>
+          <button class="btn" id="n-3">3</button>
+          <button class="btn" id="sumar">+</button>
+          <button class="btn">.</button>
+          <button class="btn d-2" id="n-0">0</button>
+          <button class="btn" id="calcular">=</button>
+        </div>
+      </div>
+    </div>
+    <div class="pizarra"></div>
+  </div>
+
+  <script src="js/animation.js"></script>
+  <script src="js/cal.js"></script>
+</body>
+
+</html>

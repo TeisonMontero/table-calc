@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Mono", monospace;
+  background-image: url(../img/fondo.svg);
+  background-size: cover;
+  max-height: 89vh;
+  background-position: center;
+}
+
+.site-header {
+  background-color: #27479fc5;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site-header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+  margin-right: 20px;
+  transition: 0.4s;
+}
+.site-header nav a:last-of-type {
+  margin: 0;
+}
+.site-header nav a:hover {
+  color: #09ff0098;
+}
+.site-header nav a:active {
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+  color: #27479f;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.tabla {
+  display: flex;
+  width: 1300px;
+  margin: 0 auto;
+}
+.tabla h2, .tabla label {
+  color: #27479f;
+}
+.tabla h2 {
+  font-weight: bold;
+  font-size: 33px;
+  border: none;
+}
+.tabla .datos {
+  display: flex;
+  margin-top: 60px;
+}
+.tabla .datos form {
+  text-align: center;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.tabla .datos form label {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.tabla .datos form input {
+  margin: 15px auto;
+  text-align: center;
+  width: 155px;
+  padding: 10px;
+  border-radius: 18px;
+  border: none;
+  background-color: #e1e1e1;
+}
+.tabla .datos form button {
+  margin: 15px auto;
+  width: 175px;
+  border: none;
+  padding: 8px;
+  border-radius: 18px;
+  color: #fff;
+  background-color: #09ff0073;
+  font-size: 20px;
+}
+.tabla .datos form button:active {
+  background-color: #09ff00de;
+}
+.tabla .tabla-history {
+  flex: 1;
+  text-align: center;
+}
+.tabla .tabla-history .bt {
+  color: #fff;
+  border: none;
+  margin: 4px 10px;
+  width: 160px;
+  border-radius: 18px;
+  font-size: 18px;
+  padding: 10px;
+}
+.tabla .tabla-history .btn-imprimir {
+  background-color: #27479fc5;
+}
+.tabla .tabla-history .btn-imprimir:active {
+  background-color: #27479f;
+}
+.tabla .tabla-history .btn-eliminar {
+  background-color: #ff0000a6;
+}
+.tabla .tabla-history .btn-eliminar:active {
+  background-color: #ff0000f5;
+}
+
+.tbl {
+  display: flex;
+  justify-content: center;
+}
+.tbl .result {
+  display: flex;
+  flex-wrap: wrap;
+  counter-reset: tables;
+}
+.tbl .result div {
+  margin: 0 25px 25px 25px;
+}
+.tbl .result div::before {
+  content: counter(tables);
+  counter-increment: tables;
+  display: block;
+  font-size: 20px;
+  margin-top: 15px;
+  display: inline-block;
+  border: 1px solid #27479fc5;
+  color: #ff0000a6;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  line-height: 25px;
+}
+.tbl .result div span {
+  color: #ff0000a6;
+}
+
+.element {
+  animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+button, input {
+  outline: none;
+}
+
+.container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: #344658;
+  flex-direction: column;
+  width: 300px;
+  padding: 1px;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+.calculator:hover {
+  opacity: 1.5;
+}
+
+.display .c-display {
+  padding: 10px 0;
+  font-size: 42px;
+  color: white;
+  font-family: sans-serif;
+  width: 95%;
+  background-color: #344658;
+  border: 0;
+  text-align: right;
+}
+
+.c-botones {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  height: 75px;
+  border: none;
+  margin: 0 1px 1px 0;
+  background-color: #3b4f66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  flex-grow: 1;
+  flex-basis: 70px;
+  font-weight: bold;
+}
+.btn:hover {
+  border: 1px solid #09ff0098;
+  color: #09ff0098;
+}
+.btn:active {
+  background-color: #213144;
+}
+
+.d-2 {
+  flex-basis: 140px;
+}
+
+.red {
+  color: #db4e41;
+  font-size: 23px;
+}
+
+.pizarra {
+  background-image: url(../img/pizarra.jpg);
+  background-repeat: no-repeat;
+  width: 635px;
+  height: 450px;
+  margin: 30px 0 0 40px;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=main.css.map */
