@@ -93,7 +93,7 @@ body {
   flex: 1;
   text-align: center;
 }
-.tabla .tabla-history .bt {
+.tabla .tabla-history .btn-eliminar, .tabla .tabla-history .btn-imprimir {
   color: #fff;
   border: none;
   margin: 4px 10px;

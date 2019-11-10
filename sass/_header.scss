@@ -17,20 +17,11 @@
         margin: 0;
       }
       &:hover{
-        color: $red;
+        color: $green;
       }
       &:active{
         color: #fff;
       }
-
     }
   }
 }
-
-// .background{
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: rgba(255, 255, 255, 0.664);
-//   height: 88vh;
-// }
